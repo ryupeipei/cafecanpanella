@@ -1,0 +1,94 @@
+@use "root";
+
+
+
+#Access {
+    background-color: root.$box-color;
+    width: root.$widthBox;
+    height: root.$heightBox;
+    padding: root.$paddingBox;
+    margin: root.$marginBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: root.$borderR;
+    opacity: root.$opacity;
+    box-shadow: root.$boxS;
+    border: root.$border;
+    position: relative;
+
+
+
+
+    & h2 {
+        // position: relative;
+        // bottom: 18rem;
+        margin: 16px 0 32px;
+        color: root.$font-color;
+        font-family: root.$fontheader;
+    }
+
+    .kuakkaImg03 {
+
+        & img {
+            width: 50%;
+        height: 50%;
+        position: absolute;
+        
+        // top: 120%;
+        object-fit: contain;
+        z-index: -100;
+        @media (width <=1000px) {
+            flex-direction: column;
+            align-items: center;
+            top: 70%;
+        }
+
+        }
+
+    }
+
+    .accessWrap {
+        display: flex;
+        gap: 1rem;
+        // position: relative;
+        // bottom: 18rem;
+
+        @media (width <=1000px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .map {
+            & iframe {
+                width: 500px;
+                height: 500px;
+                border-radius: root.$borderR;
+
+                @media (width <=800px) {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .accessText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: root.$font-colortext;
+
+
+
+        }
+
+
+
+
+
+    }
+}

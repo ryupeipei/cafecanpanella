@@ -1,0 +1,58 @@
+@use "root";
+
+
+
+#About{
+    background-color: root.$box-color;
+    width: root.$widthBox;
+    height: root.$heightBox;
+    padding: root.$paddingBox;
+    margin: root.$marginBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: root.$borderR;
+    opacity: root.$opacity;
+    box-shadow: root.$boxS;
+    border: root.$border;
+
+    @media (width <=375px) {
+        width: root.$widthBox;
+        height: root.$heightBox;
+        margin: root.$marginBox;
+    }
+    
+
+    
+
+    .kuakkaImg02{
+
+        & img{
+            width: 50%;
+        height: 50%;
+        position: absolute;
+        right: 2%;
+        
+        object-fit: contain;
+        z-index: -100;
+        }
+    
+        }
+
+    
+
+
+    & h2{
+color: root.$font-color;
+font-family: root.$fontheader;
+margin: 1rem;
+// position: relative;
+//         bottom: 15rem;
+    }
+
+    & p{
+        color: root.$font-colortext;
+    }
+}

@@ -1,0 +1,58 @@
+@use "root";
+
+#News {
+    background-color: root.$box-color;
+    background-color: root.$box-color;
+    width: root.$widthBox;
+    height: root.$heightBox;
+    padding: root.$paddingBox;
+    margin: root.$marginBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: root.$borderR;
+    opacity: root.$opacity;
+    box-shadow: root.$boxS;
+    border: root.$border;
+
+
+
+    .kuakkaImg01 {
+
+        & img {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 2%;
+            // top: 120%;
+            object-fit: contain;
+            z-index: -100;
+
+            
+
+        }
+
+    }
+
+    & h2 {
+        color: root.$font-color;
+        font-family: root.$fontheader;
+        // position: relative;
+        margin: 1rem;
+        // bottom: 20rem;
+
+    }
+
+
+    .newsText {
+        display: flex;
+        gap: 5rem;
+        color: root.$font-colortext;
+        font-family: 'Noto Sans JP', sans-serif;
+        // position: relative;
+        // bottom: 15rem;
+
+
+    }
+}

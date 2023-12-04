@@ -1,0 +1,108 @@
+@use "root";
+
+#Menu {
+    background-color: root.$box-color;
+    width: root.$widthBox;
+    height: root.$heightBox;
+    padding: root.$paddingBox;
+    margin: root.$marginBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: root.$borderR;
+    opacity: root.$opacity;
+    box-shadow: root.$boxS;
+    border: root.$border;
+
+    // @media (width <=800px) {
+    //     width: 500px;
+    //     height: 1600px;
+    // }
+
+
+    & h2 {
+        text-align: center;
+        color: root.$font-color;
+        font-family: root.$fontheader;
+        margin: 1rem 0 2rem 0;
+    }
+
+
+
+    .menuWrap {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        @media (width <=1330px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menuBox {
+            text-align: center;
+            margin: 0 auto;
+
+            & h3 {
+                color: root.$font-color;
+                font-family: root.$fontheader;
+            }
+
+            & p {
+                color: root.$font-colortext;
+            }
+
+            .menuImg {
+
+                overflow: hidden;
+                
+
+                & img {
+                    width: 300px;
+                    height: 405px;
+                    border: root.$border;
+                    object-fit: cover;
+                    object-position: right;
+
+                    @media (width <=420px) {
+                        width: 220px;
+                        height: 350px;
+                    }
+
+                }
+
+
+
+
+
+                & video {
+                    max-width: 300px;
+                    height: 405px;
+                    border-radius: 10%;
+                    border: root.$border;
+                    object-fit: cover;
+                    
+                    @media (width <=420px) {
+                        width: 220px;
+                        height: 350px;
+                    }
+
+                    // box-shadow: 2px 2px 50px 0 rgb(228, 145, 11);
+
+
+                }
+
+            }
+
+            // .menuText{
+            //     & h3 {
+
+
+            //     }
+            // }
+        }
+
+
+
+    }
+}

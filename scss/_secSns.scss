@@ -1,0 +1,64 @@
+@use "root";
+
+.wrapper{
+    background-color: root.$box-color;
+    width: 80%;
+    height: auto;
+    margin: 100px auto ;
+    padding: root.$paddingBox;
+    border-radius: root.$borderR;
+    opacity: root.$opacity;
+    box-shadow: root.$boxS;
+    border: root.$border;
+
+    & h2{
+        text-align: center;
+        color: root.$font-color;
+        font-family: root.$fontheader;
+    }
+
+    .snscontainer{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+        margin: 0rem 2rem 2rem 2rem;
+
+        @media (width <= 800px){
+    
+            flex-direction: column;
+            align-items: center;
+
+            }
+
+            & h3{
+                text-align: center;
+                color: root.$font-color;
+                font-family: root.$fontheader;
+            }
+            .tiktok-embed{
+                margin: 0 auto;
+                
+                
+            }
+
+            
+
+            
+    }
+
+    
+
+    
+
+
+}
+
+
+
+
+/* tiktok埋め込みに存在している余分な余白を除去するための記述。
+.tiktok-embedというクラスが余白を作っていますのでそれを強めのセレクタ方法で上書き
+（.tiktok-embedのみで指定すると効きません） */
+
+/* ================================================= */
+

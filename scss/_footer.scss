@@ -1,0 +1,11 @@
+@use "root";
+
+footer{
+    max-width: 100%;
+    height: 100px;
+    background-color: #DFBE10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: root.$opacity;
+}
