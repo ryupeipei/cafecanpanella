@@ -18,7 +18,7 @@
     box-shadow: root.$boxS;
     border: root.$border;
 
-    @media (width <=375px) {
+    @media (max-width:375px) {
         width: root.$widthBox;
         height: root.$heightBox;
         margin: root.$marginBox;
